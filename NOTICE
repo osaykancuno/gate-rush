@@ -1,0 +1,30 @@
+THE WALL ARCADE on SuperRare Connect
+Copyright (c) 2026 NFC Summit
+SPDX-License-Identifier: MIT
+
+The Connect plumbing under src/shell/ (paid-credit purchase and recovery UI,
+paid-round / server-run state machine, wallet-isolated storage, hosted-flow
+error mapping) and the verifier request protocol under src/verifiers/ are
+adapted from https://github.com/superrare/studio-games-example (MIT,
+Copyright (c) 2026 SuperRare), itself adapted from examples/target-game in
+@rareprotocol/connect (https://github.com/superrare/superrare-connect, MIT,
+Copyright (c) 2026 SuperRare). Upstream license retained in LICENSE.
+
+UNBREAKABLE and TAP THE NAME game rules, art direction and simulation are
+original to THE WALL ARCADE (NFC Summit).
+
+GATE RUSH (src/games/gate-rush/, src/verifiers/gate-rush.ts, tests/gate-rush.test.ts,
+PUBBLICA.cmd, PUBBLICA.ps1): game rules, art direction and simulation by osaykancuno
+(K4NCUN0 on the wall), built on THE WALL ARCADE's code above, same MIT license.
+
+Runtime dependency @rareprotocol/connect is distributed under MIT.
+Other dependencies retain their own package license notices in node_modules.
+
+The card service (cards/) embeds the fonts Anton (Copyright 2020 The Anton Project Authors) and IBM Plex Mono
+(Copyright 2017 IBM Corp.), both under the SIL Open Font License 1.1: see cards/assets/OFL.txt.
+
+The teaser (scripts/teaser.ts, comms/teaser/) embeds the pixel fonts Press Start 2P (Copyright 2012 The Press Start 2P
+Project Authors) and Silkscreen (Copyright 2001 The Silkscreen Project Authors), both under the SIL Open Font License 1.1,
+converted unchanged from the woff of their latin subsets: see comms/teaser/assets/OFL-*.txt.
+The teaser's music is Korobeiniki (Russian song, 1861, public domain), synthesized note by note by scripts/teaser.ts:
+no recording is used.

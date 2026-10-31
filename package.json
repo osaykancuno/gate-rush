@@ -1,0 +1,27 @@
+{
+  "name": "gate-rush",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GATE RUSH, a game of THE WALL ARCADE on SuperRare Connect: slam the gate on the gatecrashers, let the people of the wall in. Server-verified.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@rareprotocol/connect": "0.11.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.21",
+    "esbuild": "0.25.5",
+    "fflate": "0.8.2",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3"
+  }
+}
